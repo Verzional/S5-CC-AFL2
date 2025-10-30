@@ -21,7 +21,6 @@ class TestMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            from: "valen@valen.vexel.my.id",
             subject: $this->data['subject']
         );
     }

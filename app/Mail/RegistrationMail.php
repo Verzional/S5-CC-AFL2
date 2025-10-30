@@ -28,8 +28,7 @@ class RegistrationMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            from: "valen@valen.vexel.my.id",
-            subject: $this->data['subject'] ?? 'Pendaftaran Berhasil'
+           subject: $this->data['subject']
         );
     }
 

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pendaftaran Berhasil</title>
+    <title>Registration Successful</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -22,8 +22,8 @@
                             d="M9 12l2 2l4-4m6 2a9 9 0 11-18 0a9 9 0 0118 0z" />
                     </svg>
                 </div>
-                <h1 class="text-3xl font-bold text-gray-800">Pendaftaran Berhasil!</h1>
-                <p class="text-gray-500 mt-3 text-lg">Akun Anda telah berhasil dibuat</p>
+                <h1 class="text-3xl font-bold text-gray-800">Registration Successful!</h1>
+                <p class="text-gray-500 mt-3 text-lg">You have successfully registered for the Cloud Computing class</p>
             </div>
 
             <!-- Success Message -->
@@ -41,20 +41,20 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
-                    Langkah Selanjutnya
+                    Class Information
                 </h3>
                 <ul class="text-blue-800 text-sm space-y-2 mt-3">
                     <li class="flex items-start">
                         <span class="mr-2">✓</span>
-                        <span>Email konfirmasi telah dikirim ke alamat email Anda</span>
+                        <span>Cloud Computing Class Semester 5</span>
                     </li>
                     <li class="flex items-start">
                         <span class="mr-2">✓</span>
-                        <span>Silakan periksa inbox atau folder spam</span>
+                        <span>Topics include AWS, Azure, and Google Cloud</span>
                     </li>
                     <li class="flex items-start">
                         <span class="mr-2">✓</span>
-                        <span>Klik tautan aktivasi untuk mengaktifkan akun</span>
+                        <span>Labs and final project</span>
                     </li>
                 </ul>
             </div>
@@ -63,18 +63,17 @@
             <div class="mt-8 space-y-3">
                 <a href="/"
                     class="block w-full py-3 px-6 text-center text-white bg-indigo-600 hover:bg-indigo-700 rounded-lg font-semibold shadow-md hover:shadow-lg transition">
-                    Kembali ke Beranda
+                    Back to Home
                 </a>
                 <a href="#"
                     class="block w-full py-3 px-6 text-center text-indigo-600 border-2 border-indigo-600 hover:bg-indigo-50 rounded-lg font-semibold transition">
-                    Masuk ke Akun
+                    Login to Account
                 </a>
             </div>
 
             <!-- Footer -->
             <p class="mt-8 text-xs text-gray-400 text-center">
-                Tidak menerima email? <a href="#" class="text-indigo-600 hover:underline">Kirim ulang</a><br>
-                © {{ date('Y') }} Aplikasi Kami. Semua Hak Dilindungi.
+                © {{ date('Y') }} University. All Rights Reserved.
             </p>
         </div>
     </div>

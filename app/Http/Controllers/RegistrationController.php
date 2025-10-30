@@ -15,7 +15,7 @@ class RegistrationController extends Controller
      */
     public function index()
     {
-        return view('registration.form');
+        return view('app');
     }
 
     /**
@@ -43,14 +43,14 @@ class RegistrationController extends Controller
         $emailData = [
             'name' => $registration->fullName,
             'email' => $registration->email,
-            'subject' => 'Selamat Datang - Pendaftaran Berhasil',
+            'subject' => 'Welcome to Cloud Computing Class - Registration Successful',
         ];
 
         // Send confirmation email
         Mail::to($registration->email)->send(new RegistrationMail($emailData));
 
         // Redirect to success page
-        return redirect()->route('registration.success')->with('success', 'Pendaftaran berhasil! Silakan cek email Anda.');
+        return redirect()->route('success')->with('success', 'Registration successful! Welcome to the Cloud Computing class.');
     }
 
     /**
@@ -58,6 +58,6 @@ class RegistrationController extends Controller
      */
     public function success()
     {
-        return view('registration.success');
+        return view('success');
     }
 }
